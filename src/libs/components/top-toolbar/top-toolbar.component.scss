@@ -1,0 +1,28 @@
+
+.toolbar {
+  &-list {
+    :hover {
+      background-color: #002f52;
+    }
+  &-bg {
+    background: #005699;
+    cursor: pointer;
+    position: relative;
+    padding: 1em;
+    color: #ffffff;
+
+  }
+}
+  &-title {
+    background: linear-gradient(to right,#003e6c 50%,#005699);
+    height: 9.3em;
+    &-header {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 2em;
+      font-weight: 800;
+      padding: 0em 1em;
+    }
+  }
+}
+

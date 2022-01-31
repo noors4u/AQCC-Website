@@ -1,0 +1,39 @@
+<div fxLayout="column">
+<div class="team" fxLayout="column">
+  <label class="team-header">Teams</label>
+  <div class="team-league" fxFlex fxLayout="row wrap" fxLayoutAlign="space-between center">
+    <div class="team-league-list p-16" fxLayout="row"  fxFlex="15" *ngFor="let item of teamList" (click)="showTeamSquad(item.teamnumber)">
+      <div fxLayout="column" fxFlex >
+      <div class="team-league-list-name header-3">{{item.leagueName}}</div>
+      <div class="team-league-list-divname header-3">{{item.divName}}</div>
+    </div>
+      <img src=".../../../../../../../assets/images/Logo_Container.png" height="40" width="40">
+    </div>
+  </div>
+</div>
+
+<!-- JCL 1 *ngIf="divName === 'Division 1' " -->
+<div class="team" fxLayout="column"  *ngFor="let item of curentTeamView">
+  <label class="team-header">{{item.teamName}}</label>
+  <div fxLayout="row wrap" fxLayoutGap="1.281em" >
+    <div class="team-league-list m-b-16" fxLayout="row"  fxLayoutAlign="space-between center" fxFlex="13" *ngFor="let player of item.playerList">
+      <div fxLayout="column" fxFlex >
+        <div class="team-league-list-badge" *ngIf="player.firstName === 'Noor Mohammed' || player.firstName === 'Vishal'"><span [ngStyle]="{'color': player.role === 'C' ? '#005699' : '#ee393f'}" class="header-3">{{player.role}}</span></div>
+        <!-- <img src=".../../../../../../../assets/images/887.png" height="auto" width="100%"> -->
+        <img [src]="
+        '.../../../../../../../assets/images/' + player.img
+      " height="auto" width="100%">
+      <div fxLayoutAlign="center start" fxLayout="column" class="p-8">
+      <div class="team-league-list-divname header-3">{{player.firstName}}</div>
+      <div class="team-league-list-divname header-3">{{player.lastName}}</div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- JCL 1 -->
+
+
+
+
+</div>

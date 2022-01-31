@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: "Rakuten Sans"; }
+@import url(./libs/gx-theme/rex-styles.scss);
+
+
+
+.font-bold {
+  font-weight: 700;
+}
+.p-16 {
+  padding: 16px;
+}
+.p-8 {
+  padding: 8px;
+}
+
+.b-r-50 {
+  border-radius: 50%;
+}
+
+.p-l-r-10 {
+  padding: 0px 10px;
+}
+
+.p-l-4 {
+  padding-left: 4px;
+}
+
+.m-16 {
+  margin: 16px;
+}
+.m-t-16 {
+  margin-top: 16px;
+}
+.m-b-16 {
+  margin-bottom: 16px;
+}
+.header-1 {
+  font-size: 1.538em;
+}
+.header-2 {
+  font-size: 1.231em;
+}
+.header-3 {
+  font-size: 1.077em;
+}
+
+
+

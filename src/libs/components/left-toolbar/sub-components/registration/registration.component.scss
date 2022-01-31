@@ -1,0 +1,36 @@
+.reg {
+  margin: 16px;
+  &-header {
+    font-family: "Rakuten Sans";
+    margin-bottom: 1em;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #ee3238;
+    font-weight: 600;
+    font-size: 1.538em;
+  }
+  &-form {
+    &-details {
+      color: #002F52 !important;
+      font-weight: 600;
+      font-size: 1.231em;
+    }
+    &-role {
+      color: #002F52 !important;
+      font-size: 1.077em;
+      margin-left: 1em;
+    }
+    &-name {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 6px 8px;
+        line-height: 16px;
+        box-sizing: border-box;
+        color: #2f3f4a;
+        font-family: "Rakuten Sans";
+        font-weight: 600;
+    }
+  }
+}
+
+
