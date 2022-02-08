@@ -1,0 +1,29 @@
+<div fxLayout="column">
+  <div class="player" fxLayout="column">
+    <label class="player-header color-blue">Player Stats</label>
+    <div class="player-league" fxFlex fxLayout="row wrap" fxLayoutAlign="space-around center">
+      <div class="player-league-list" fxLayout="column"  fxFlex="23" *ngFor="let item of playerList">
+        <div fxLayout="column" fxLayoutAlign="center center" fxFlex class="p-16" fxLayoutGap="0.1em">
+        <div class="font-bold header-2">{{item.role}}</div>
+        <div class="player-league-list-name header-3">{{item.format}}</div>
+      </div>
+      <div fxLayout="column" fxLayoutAlign="start center" fxFlex>
+        <img *ngIf="item.role === 'Career'" [src]="
+        '.../../../../../../../assets/images/' + item.img
+      " height="auto" width="100%">
+      <div *ngIf="item.role === 'Batsman'">
+        <div>
+        <span>{{item.run}}</span>
+        <span>{{item.score}}</span>
+      </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-around center" fxFlex fxFill class="p-16" *ngIf="item.role !== 'Batsman'">
+        <span class="header-3">{{item.matches}}</span>
+        <span class="font-bold header-2">{{item.count}}</span>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  </div>

@@ -4,28 +4,19 @@
     font-family: "Rakuten Sans";
     margin-bottom: 1em;
     padding-bottom: 0.4em;
-    border-bottom: 2px solid #ee3238;
+    border-bottom: 2px solid #005699;
     font-weight: 600;
     font-size: 1.538em;
   }
   &-league {
-    :hover {
-      background: #002f52;
-    }
     &-list {
       background: #005699;
       border-radius: 0.3em;
       align-items: center;
       cursor: pointer;
       position: relative;
-      &-name {
-        color: #ffffff;
-      }
-      &-divname {
-        color: #ffffff;
-        font-weight: bold;
-      }
-      &-player {
+      &-selected {
+        background: #002f52;
       }
       &-badge {
         width: 2.2em;
@@ -37,6 +28,7 @@
         right: 0.5rem;
         text-align: center;
         color: #005699;
+        font-weight: 600;
         background: white;
         span {
           font-weight: bold;

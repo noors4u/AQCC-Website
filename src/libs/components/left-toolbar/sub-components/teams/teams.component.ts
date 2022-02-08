@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-teams',
@@ -12,6 +13,8 @@ export class TeamsComponent implements OnInit {
     leagueName: "JCL",
     divName: "Division 1",
     teamnumber: 1,
+    selected:true,
+    hover: true,
     playersList:[  {
       teamName : 'Player Index - JCL 1',
       playerList: [
@@ -19,7 +22,8 @@ export class TeamsComponent implements OnInit {
         img: 'Noor.jpg',
         firstName: "Noor Mohammed",
         lastName: "Ibrahim",
-        role: "C"
+        role: "C",
+        info: 1,
       },
       {
         img: 'arun.jpeg',
@@ -71,6 +75,7 @@ export class TeamsComponent implements OnInit {
         img: 'leo.jpeg',
         firstName: "Leo",
         lastName: "Joseph",
+        role: "C"
       },
       {
         img: 'vijay.jpeg',
@@ -94,7 +99,7 @@ export class TeamsComponent implements OnInit {
         },
         {
         img: 'Noor.jpg',
-        firstName: "Noor",
+        firstName: "Noor Mohammed",
         lastName: "Ibrahim",
         role: "C"
       },
@@ -166,7 +171,7 @@ export class TeamsComponent implements OnInit {
         },
         {
         img: 'Noor.jpg',
-        firstName: "Noor",
+        firstName: "Noor Mohammed",
         lastName: "Ibrahim",
         role: "C"
       },
@@ -244,7 +249,7 @@ export class TeamsComponent implements OnInit {
       },
       {
         img: 'Noor.jpg',
-        firstName: "Noor",
+        firstName: "Noor Mohammed",
         lastName: "Ibrahim",
         role: "C"
       },
@@ -359,7 +364,7 @@ export class TeamsComponent implements OnInit {
       },
       {
         img: 'Noor.jpg',
-        firstName: "Noor",
+        firstName: "Noor Mohammed",
         lastName: "Ibrahim",
         role: "C"
       },
@@ -431,7 +436,7 @@ export class TeamsComponent implements OnInit {
       },
       {
         img: 'Noor.jpg',
-        firstName: "Noor",
+        firstName: "Noor Mohammed",
         lastName: "Ibrahim",
         role: "C"
       },
@@ -450,21 +455,32 @@ curentTeamView: any = [
 ]
 
 
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.curentTeamView = this.teamList[0].playersList;
   }
 
-  showTeamSquad(teamnumber: any) {
-    console.log(teamnumber,'teamnumber')
+  showTeamSquad(card: number) {
+    console.log(card,'teamnumber')
     for(let i = 0; this.teamList.length-1; i++) {
-      if (this.teamList[i].teamnumber === teamnumber) {
+      if (this.teamList[i].teamnumber === card) {
         this.curentTeamView = this.teamList[i].playersList;
-        console.log(this.curentTeamView,'curentTeamView')
+
       }
+      this.teamList[i].selected = false;
 
     }
+    // item.card.selected = true;
+  }
+
+  playerInfo(Firstname: any) {
+    console.log(Firstname, 'Firstname')
+    this.router.navigate(['../player-info'], {
+      relativeTo: this.route,
+    }
+
+    );
   }
 
 }

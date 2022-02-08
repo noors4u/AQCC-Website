@@ -1,19 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutUsComponent } from 'src/libs/components/left-toolbar/sub-components/about-us/about-us.component';
-
+import { PlayersInfoComponent } from 'src/libs/components/left-toolbar/sub-components/players-info/players-info.component';
+import { TeamsComponent } from 'src/libs/components/left-toolbar/sub-components/teams/teams.component';
 // const routes: Routes = [];
 
 const routes: Routes = [
-    {
-      path: '',
-      redirectTo: 'list',
-      pathMatch: 'full',
-    },
-    {
-      path: 'about-us',
-      component: AboutUsComponent,
-    },
+  { path: 'team', component: TeamsComponent },
+  { path: 'player-info', component: PlayersInfoComponent },
   ];
 
 @NgModule({

@@ -4,7 +4,6 @@ import { HomePageComponent } from 'src/libs/components/home-page/home-page.compo
 import {MatDividerModule} from '@angular/material/divider';
 import { CoreModule, FlexLayoutModule } from '@angular/flex-layout';
 import { AqccMatButtonComponent } from 'src/libs/core/mat-button/mat-button.component';
-import { LeftToolbarModule } from '../left-toolbar/left-toolbar-module';
 import { CommonModule } from '@angular/common';
 
 

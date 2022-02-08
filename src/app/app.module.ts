@@ -11,7 +11,6 @@ import { MatDividerModule } from '@angular/material/divider';
 import { AqccMatButtonModule } from 'src/libs/core/mat-button/mat-button.module';
 import {MatIconModule} from '@angular/material/icon';
 import { TopToolbarComponent } from 'src/libs/components/top-toolbar/top-toolbar.component';
-import { LeftToolbarModule } from 'src/libs/components/left-toolbar/left-toolbar-module';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { SponsersComponent } from 'src/libs/components/sponsers/sponsers.component';
@@ -25,6 +24,7 @@ import { VideoComponent } from 'src/libs/components/left-toolbar/sub-components/
 import { RegistrationComponent } from 'src/libs/components/left-toolbar/sub-components/registration/registration.component';
 import { AboutUsComponent } from 'src/libs/components/left-toolbar/sub-components/about-us/about-us.component';
 import { TeamsComponent } from 'src/libs/components/left-toolbar/sub-components/teams/teams.component';
+import { LeftToolbarModule } from 'src/libs/components/left-toolbar/left-toolbar-module';
 
 const appRoutes: Routes = [
   { path: 'matches', component: MatchesComponent },
@@ -43,7 +43,6 @@ const appRoutes: Routes = [
     SponsersComponent,
     TopToolbarComponent,
     FilterPipe,
-    LeaguesComponent,
     LeftToolbarComponent,
     MatchesComponent,
 
@@ -51,10 +50,10 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LeftToolbarModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatDividerModule,
+    LeftToolbarModule,
     AqccMatButtonModule,
     MatIconModule,
     HomePageModule,

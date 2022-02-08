@@ -7,10 +7,12 @@ import { AqccMatButtonModule } from 'src/libs/core/mat-button/mat-button.module'
 import { CommonModule } from '@angular/common';
 import { TeamsComponent } from './sub-components/teams/teams.component';
 import { RegistrationComponent } from './sub-components/registration/registration.component';
+import { LeaguesComponent } from './sub-components/leagues/leagues.component';
+import { PlayersInfoComponent } from './sub-components/players-info/players-info.component';
 
 
 @NgModule({
-  declarations: [TeamsComponent, RegistrationComponent],
+  declarations: [TeamsComponent, PlayersInfoComponent, RegistrationComponent, LeaguesComponent],
   imports: [
     BrowserModule,
     CommonModule,

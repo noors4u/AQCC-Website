@@ -1,0 +1,28 @@
+.player {
+  margin: 16px;
+  &-header {
+    font-family: "Rakuten Sans";
+    margin-bottom: 1em;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #005699;
+    font-weight: 600;
+    font-size: 1.538em;
+  }
+  &-league {
+    :hover {
+      background: #002f52;
+    }
+    &-list {
+      background: #005699;
+      border-radius: 0.3em;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      :hover {
+        background: #002f52;
+      }
+
+    }
+
+  }
+}
