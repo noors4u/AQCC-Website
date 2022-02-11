@@ -7,21 +7,44 @@
         <div class="font-bold header-2">{{item.role}}</div>
         <div class="player-league-list-name header-3">{{item.format}}</div>
       </div>
-      <div fxLayout="column" fxLayoutAlign="start center" fxFlex>
+      <div fxLayout="column" fxLayoutAlign="start center" fxFlex fxFill>
         <img *ngIf="item.role === 'Career'" [src]="
         '.../../../../../../../assets/images/' + item.img
       " height="auto" width="100%">
-      <div *ngIf="item.role === 'Batsman'">
-        <div>
+      <div *ngIf="item.role === 'Batsman'" fxLayout="row" fxFlex fxFill width="100%">
+        <div fxFlex="50" fxLayout="column" fxLayoutAlign="space-around center">
+        <div fxLayout="column">
         <span>{{item.run}}</span>
-        <span>{{item.score}}</span>
+        <span class="header-1 font-bold">{{item.score}}</span>
+      </div>
+      <div fxLayout="column">
+        <span>{{item.avg}}</span>
+        <span class="header-1 font-bold">{{item.average}}</span>
+    </div>
+      </div>
+      <div fxFlex="50" fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="2em">
+        <div fxLayout="column" class="player-league-list-bubble" fxLayoutAlign="center center">
+          <span>{{item.hundred}}</span>
+          <span class="header-1 font-bold">{{item.century}}</span>
+        </div>
+      <div fxLayout="column" class="player-league-list-bubble" fxLayoutAlign="center center">
+        <span>{{item.fifty}}</span>
+        <span class="header-1 font-bold">{{item.halfcentury}}</span>
       </div>
       </div>
+    </div>
+
       <div fxLayout="row" fxLayoutAlign="space-around center" fxFlex fxFill class="p-16" *ngIf="item.role !== 'Batsman'">
         <span class="header-3">{{item.matches}}</span>
-        <span class="font-bold header-2">{{item.count}}</span>
+        <span class="player-league-list-text font-bold header-2">{{item.count}}</span>
       </div>
       </div>
+      <div class="player-league-list-stats" fxFlex *ngIf="item.role === 'Batsman'">
+        <div>
+
+        </div>
+      </div>
+
       </div>
     </div>
   </div>

@@ -464,14 +464,14 @@ curentTeamView: any = [
   showTeamSquad(card: number) {
     console.log(card,'teamnumber')
     for(let i = 0; this.teamList.length-1; i++) {
+      console.log(this.teamList,'teamList')
       if (this.teamList[i].teamnumber === card) {
+        console.log(this.teamList[i].teamnumber, 'this.teamList[i].teamnumber')
         this.curentTeamView = this.teamList[i].playersList;
-
       }
       this.teamList[i].selected = false;
 
     }
-    // item.card.selected = true;
   }
 
   playerInfo(Firstname: any) {
@@ -482,5 +482,4 @@ curentTeamView: any = [
 
     );
   }
-
 }
