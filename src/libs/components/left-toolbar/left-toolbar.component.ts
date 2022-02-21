@@ -7,6 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./left-toolbar.component.scss']
 })
 export class LeftToolbarComponent implements OnInit {
+  allPlayerHover = false;
 
   constructor(
     private router: Router,
@@ -16,4 +17,7 @@ export class LeftToolbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  hoverPlayer() {
+    this.allPlayerHover = !this.allPlayerHover;
+    }
 }

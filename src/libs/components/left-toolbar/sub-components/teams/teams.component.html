@@ -1,9 +1,10 @@
 <div fxLayout="column">
 <div class="team" fxLayout="column">
-  <label class="team-header color-blue">Teams</label>
+  <label class="team-header color-blue">{{title}}</label>
   <div class="team-league" fxFlex fxLayout="row wrap" fxLayoutAlign="space-between center">
-    <div class="team-league-list p-16" [ngClass]="{'team-league-list-selected' : item.hover || item.selected}" (mouseenter)="item.hover = true"
-    (mouseleave)="item.hover = false" fxLayout="row"  fxFlex="15" *ngFor="let item of teamList" (click)="showTeamSquad(item.teamnumber)">
+
+    <div class="team-league-list p-16" [ngClass]="{ 'team-league-list-selected':  item.selected || item.hover, 'color-accent-800': item.selected }" (mouseenter)="item.hover = true"
+    (mouseleave)="item.hover = false" fxLayout="row"  fxFlex="15" *ngFor="let item of teamList" (click)="showTeamSquad(item.teamnumber)" >
       <div fxLayout="column" fxFlex >
       <div class="font-bold header-3">{{item.leagueName}}</div>
       <div class="header-3">{{item.divName}}</div>

@@ -5,36 +5,96 @@
     margin-bottom: 1em;
     padding-bottom: 0.4em;
     border-bottom: 2px solid #005699;
-    font-weight: 600;
-    font-size: 1.538em;
+    &-title {
+      font-weight: 600;
+    }
+    &-viewall {
+      display: inline-block;
+      color: #002f52;
+      border: 1px solid #002f52;
+      padding: 0 1.538em;
+      line-height: 2.5em;
+      border-radius: 2em;
+      background: #fff;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 600;
+      &-highlight {
+        background: #005699;
+      border-color: #005699;
+      color: #fff;
+      }
+    }
   }
   &-league {
-
     &-list {
       background: #002f52;
       border-radius: 0.3em;
       align-items: center;
+      border-top: 6px solid #ee393f;
       cursor: pointer;
       position: relative;
-&-text {
-  font-size: 1.8em;
-}
+      &-text {
+        font-size: 1.8em;
+      }
       &-bubble {
-    width: 4rem;
-    height: 4rem;
-    position: relative;
-    display: flex;
-    border-radius: 100%;
-    color: #fff;
-    background: #29a9e4;
-    z-index: 10;
-    box-shadow: 0 0 5px rgb(0 0 0 / 60%);
+        width: 5em;
+        height: 5em;
+        position: relative;
+        display: flex;
+        border-radius: 100%;
+        color: #fff;
+        background: #29a9e4;
+        z-index: 10;
+        box-shadow: 0 0 5px rgb(0 0 0 / 60%);
+      }
+      .secondary {
+        top: 9.6em;
+        right: 1.5em;
+        bottom: auto;
+        left: auto;
+        background: #4db8e9;
+        z-index: 5;
+        position: absolute;
       }
       &-stats {
-        background: linear-gradient(#004c85,#002f52);
+        background: linear-gradient(#004c85, #002f52);
+        border-radius: 0.3em;
+        &-label {
+          height: 2em;
+          line-height: 1em;
+          margin-bottom: 0.6em;
+          padding: 0 0.2em;
+          font-size: 0.9em;
+          font-weight: 300;
+          color: rgba(255, 255, 255, 0.6);
+          text-align: center;
+        }
+        &-info {
+          width: 3.6em;
+          height: 3.6em;
+          position: relative;
+          display: flex;
+          border-radius: 100%;
+          color: #fff;
+          z-index: 10;
+        }
+        .grey {
+          background-color: #b1acb7;
+        }
+        .dblue {
+          background-color: #1d579e;
+        }
+        .lblue {
+          background-color: #5abbff;
+        }
+        .green {
+          background-color: #3cbb31;
+        }
+        .red {
+          background-color: #f45410;
+        }
       }
     }
-
-
   }
 }

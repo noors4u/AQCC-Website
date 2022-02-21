@@ -1,6 +1,10 @@
 <div fxLayout="column">
   <div class="player" fxLayout="column">
-    <label class="player-header color-blue">Player Stats</label>
+    <div fxLayout="row" fxFlex class="player-header" fxLayoutAlign="center center">
+      <label class="player-header-title color-blue header-1" fxFlex>{{title}}</label>
+      <div class="player-header-viewall color-blue" [ngClass]="{'player-header-viewall-highlight': allPlayerHover}" (mouseenter)="hoverPlayer()"
+      (mouseleave)="hoverPlayer()" (click)="viewAllPlayers()">View All Players</div>
+    </div>
     <div class="player-league" fxFlex fxLayout="row wrap" fxLayoutAlign="space-around center">
       <div class="player-league-list" fxLayout="column"  fxFlex="23" *ngFor="let item of playerList">
         <div fxLayout="column" fxLayoutAlign="center center" fxFlex class="p-16" fxLayoutGap="0.1em">
@@ -11,38 +15,87 @@
         <img *ngIf="item.role === 'Career'" [src]="
         '.../../../../../../../assets/images/' + item.img
       " height="auto" width="100%">
-      <div *ngIf="item.role === 'Batsman'" fxLayout="row" fxFlex fxFill width="100%">
-        <div fxFlex="50" fxLayout="column" fxLayoutAlign="space-around center">
-        <div fxLayout="column">
+      <div *ngIf="item.role === 'Batsman' || item.role === 'Bowler'" fxLayout="row" fxFlex fxFill width="100%" class="ptb-13">
+        <div fxFlex="50" fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="2em">
+        <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="0.2em">
         <span>{{item.run}}</span>
+        <span *ngIf="item.role === 'Bowler'">{{item.wicket}}</span>
         <span class="header-1 font-bold">{{item.score}}</span>
+        <span *ngIf="item.role === 'Bowler'" class="header-1 font-bold">{{item.totalwickets}}</span>
       </div>
-      <div fxLayout="column">
+      <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="0.2em">
         <span>{{item.avg}}</span>
         <span class="header-1 font-bold">{{item.average}}</span>
     </div>
       </div>
-      <div fxFlex="50" fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="2em">
+      <div fxFlex="50" fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="2em" class="p-t-b-5">
         <div fxLayout="column" class="player-league-list-bubble" fxLayoutAlign="center center">
           <span>{{item.hundred}}</span>
           <span class="header-1 font-bold">{{item.century}}</span>
+          <span>{{item.bbi}}</span>
+          <span class="header-1 font-bold">{{item.bestbowling}}</span>
+
         </div>
-      <div fxLayout="column" class="player-league-list-bubble" fxLayoutAlign="center center">
+      <div fxLayout="column" class="player-league-list-bubble secondary" fxLayoutAlign="center center" *ngIf="item.role === 'Batsman'">
         <span>{{item.fifty}}</span>
         <span class="header-1 font-bold">{{item.halfcentury}}</span>
       </div>
       </div>
     </div>
 
-      <div fxLayout="row" fxLayoutAlign="space-around center" fxFlex fxFill class="p-16" *ngIf="item.role !== 'Batsman'">
+      <div fxLayout="row" fxLayoutAlign="space-around center" fxFlex fxFill class="p-16" *ngIf="item.role !== 'Batsman' && item.role !== 'Bowler'">
         <span class="header-3">{{item.matches}}</span>
         <span class="player-league-list-text font-bold header-2">{{item.count}}</span>
       </div>
       </div>
-      <div class="player-league-list-stats" fxFlex *ngIf="item.role === 'Batsman'">
-        <div>
+      <div class="player-league-list-stats" fxFill fxFlex *ngIf="item.role === 'Batsman'">
+        <div *ngFor="let child of item.stats" fxFlex fxLayout="row" fxLayoutAlign="center start" class="ptb-13">
+          <div  fxLayout="column" fxLayoutAlign="center center" fxFlex="19">
+            <span class="player-league-list-stats-label">{{child.hs}}</span>
+            <div class="player-league-list-stats-info grey" fxLayoutAlign="center center" ><span>{{child.highscore}}</span></div>
+          </div>
+          <div  fxLayout="column" fxLayoutAlign="center center" fxFlex="19">
+            <span class="player-league-list-stats-label">{{child.sr}}</span>
+            <span class="player-league-list-stats-info dblue" fxLayoutAlign="center center">{{child.strikerate}}</span>
+          </div>
+          <div  fxLayout="column" fxLayoutAlign="center center" fxFlex="19">
+            <span class="player-league-list-stats-label">{{child.bf}}</span>
+            <span class="player-league-list-stats-info lblue" fxLayoutAlign="center center">{{child.ballfaced}}</span>
+          </div>
+          <div  fxLayout="column" fxLayoutAlign="center center" fxFlex="19">
+            <span class="player-league-list-stats-label">{{child.inn}}</span>
+            <span class="player-league-list-stats-info green" fxLayoutAlign="center center">{{child.innings}}</span>
+          </div>
+          <div  fxLayout="column" fxLayoutAlign="center center" fxFlex="19">
+            <span class="player-league-list-stats-label">{{child.no}}</span>
+            <span class="player-league-list-stats-info red" fxLayoutAlign="center center">{{child.notout}}</span>
+          </div>
+      </div>
+      </div>
 
-        </div>
+      <div class="player-league-list-stats" fxFlex *ngIf="item.role === 'Bowler'">
+        <div *ngFor="let child of item.bowlstats" fxFlex fxLayout="row" fxLayoutAlign="center start" class="ptb-13">
+          <div  fxLayout="column" fxLayoutAlign="center center" fxFlex="19">
+            <span class="player-league-list-stats-label">{{child.bb}}</span>
+            <div class="player-league-list-stats-info grey" fxLayoutAlign="center center" ><span>{{child.ballsbowled}}</span></div>
+          </div>
+          <div  fxLayout="column" fxLayoutAlign="center center" fxFlex="19">
+            <span class="player-league-list-stats-label">{{child.rc}}</span>
+            <span class="player-league-list-stats-info dblue" fxLayoutAlign="center center">{{child.runscondeded}}</span>
+          </div>
+          <div  fxLayout="column" fxLayoutAlign="center center" fxFlex="19">
+            <span class="player-league-list-stats-label">{{child.eco}}</span>
+            <span class="player-league-list-stats-info lblue" fxLayoutAlign="center center">{{child.economy}}</span>
+          </div>
+          <div  fxLayout="column" fxLayoutAlign="center center" fxFlex="19">
+            <span class="player-league-list-stats-label">{{child.inn}}</span>
+            <span class="player-league-list-stats-info green" fxLayoutAlign="center center">{{child.innings}}</span>
+          </div>
+          <div  fxLayout="column" fxLayoutAlign="center center" fxFlex="19">
+            <span class="player-league-list-stats-label">{{child.sr}}</span>
+            <span class="player-league-list-stats-info red" fxLayoutAlign="center center">{{child.strikerate}}</span>
+          </div>
+      </div>
       </div>
 
       </div>

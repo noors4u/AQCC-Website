@@ -7,14 +7,14 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./teams.component.scss']
 })
 export class TeamsComponent implements OnInit {
-
+  title = 'Teams'
   teamList = [
   {
     leagueName: "JCL",
     divName: "Division 1",
     teamnumber: 1,
     selected:true,
-    hover: true,
+    hover: false,
     playersList:[  {
       teamName : 'Player Index - JCL 1',
       playerList: [
@@ -53,7 +53,7 @@ export class TeamsComponent implements OnInit {
       {
         img: '887.png',
         firstName: "Dhinesh",
-        lastName: "N"
+        lastName: "Kumar"
       },
       {
         img: '887.png',
@@ -64,7 +64,7 @@ export class TeamsComponent implements OnInit {
       {
         img: 'dinesh.jpeg',
         firstName: "Dhinesh",
-        lastName: "Kumar"
+        lastName: "N"
       },
       {
         img: 'gurman.jpeg',
@@ -89,6 +89,8 @@ export class TeamsComponent implements OnInit {
     leagueName: "JCL",
     divName: "Division 2",
     teamnumber: 2,
+    selected:false,
+    hover: false,
     playersList:[  {
       teamName : 'Player Index - JCL 2',
       playerList: [
@@ -161,6 +163,8 @@ export class TeamsComponent implements OnInit {
     leagueName: "JCL",
     divName: "Division 3",
     teamnumber: 3,
+    selected:false,
+    hover: false,
     playersList:[  {
       teamName : 'Player Index - JCL 3',
       playerList: [
@@ -233,6 +237,8 @@ export class TeamsComponent implements OnInit {
     leagueName: "Japan Cup",
     divName: "Division 1",
     teamnumber: 4,
+    selected:false,
+    hover: false,
     playersList:[  {
       teamName : 'Player Index - Japan Cup 1',
       playerList: [
@@ -306,6 +312,8 @@ export class TeamsComponent implements OnInit {
     leagueName: "Japan Cup",
     divName: "Division 2",
     teamnumber: 5,
+    selected:false,
+    hover: false,
     playersList:[  {
       teamName : 'Player Index - Japan Cup 2',
       playerList: [
@@ -380,6 +388,8 @@ export class TeamsComponent implements OnInit {
     leagueName: "KCL",
     divName: "Team 1",
     teamnumber: 6,
+    selected:false,
+    hover: false,
     playersList:[  {
       teamName : 'Player Index - KCL 1',
       playerList: [
@@ -462,17 +472,25 @@ curentTeamView: any = [
   }
 
   showTeamSquad(card: number) {
-    console.log(card,'teamnumber')
-    for(let i = 0; this.teamList.length-1; i++) {
-      console.log(this.teamList,'teamList')
+    for(let i = 0; i<this.teamList.length; i++) {
       if (this.teamList[i].teamnumber === card) {
-        console.log(this.teamList[i].teamnumber, 'this.teamList[i].teamnumber')
+        console.log(this.teamList, 'this.teamList')
         this.curentTeamView = this.teamList[i].playersList;
+
       }
       this.teamList[i].selected = false;
-
     }
   }
+
+  // showTeamSquad(card: number) {
+  //   for(let i = 0; i<this.teamList.length; i++) {
+  //     console.log(this.teamList, 'teamlist')
+  //     if (this.teamList[i].selected === true) {
+  //       this.curentTeamView = this.teamList[i].playersList;
+  //     }
+  //     this.teamList[i].selected = false;
+  //   }
+  // }
 
   playerInfo(Firstname: any) {
     console.log(Firstname, 'Firstname')
