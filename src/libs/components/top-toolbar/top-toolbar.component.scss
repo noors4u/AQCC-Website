@@ -2,25 +2,25 @@
 .toolbar {
   &-list {
     :hover {
-      background-color: #002f52;
+      background-color: #0066b3;
     }
   &-bg {
-    background: #005699;
+    background: #23459d;
     cursor: pointer;
     position: relative;
     padding: 1em;
-    color: #ffffff;
 
   }
 }
   &-title {
-    background: linear-gradient(to right,#003e6c 50%,#005699);
+    // background: #23459d;
     height: 9.3em;
+    background-image: url(./../../../assets/images/header_aqcc.png);
+    background-size: cover;
+    background-position: center;
     &-header {
       text-transform: uppercase;
-      font-size: 2em;
-      font-weight: 800;
-      padding: 0em 1em;
+      font-size: 3.5em;
     }
   }
 }

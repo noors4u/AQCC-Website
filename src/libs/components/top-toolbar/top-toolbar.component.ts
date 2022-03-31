@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-toolbar.component.scss']
 })
 export class TopToolbarComponent implements OnInit {
-  teamName = "Alpha Quasher Cricket Club (AQCC)"
+  teamName = "Alpha Quasher Cricket Club"
   scoreCard = [
     {
       leagues: 'JCL - Div 1',

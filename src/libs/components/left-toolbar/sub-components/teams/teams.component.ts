@@ -20,67 +20,67 @@ export class TeamsComponent implements OnInit {
       playerList: [
         {
         img: 'Noor.jpg',
-        firstName: "Noor Mohammed",
-        lastName: "Ibrahim",
+        playerName: "Noor Mohammed",
+        playerRole: "WK/Batsman",
         role: "C",
         info: 1,
       },
       {
         img: 'arun.jpeg',
-        firstName: "Arun",
-        lastName: "Kumar"
+        playerName: "Arun Kumar",
+        playerRole: "All Rounder"
       },
       {
         img: 'madhavan.jpeg',
-        firstName: "Madhavan",
-        lastName: "Rajendran"
+        playerName: "Madhavan Rajendran",
+        playerRole: "Batsman"
       },
       {
         img: 'prithvi.jpeg',
-        firstName: "Prithvi",
-        lastName: "Raj"
+        playerName: "Prithvi Raj",
+        playerRole: "Bowler"
       },
       {
         img: '887.png',
-        firstName: "Srinivas",
-        lastName: "Pedada"
+        playerName: "Srinivas Pedada",
+        playerRole: "Batsman"
       },
       {
         img: 'dharani.jpeg',
-        firstName: "Dharani ",
-        lastName: "Krishna"
+        playerName: "Dharani Krishna",
+        playerRole: "Batsman"
       },
       {
         img: '887.png',
-        firstName: "Dhinesh",
-        lastName: "Kumar"
+        playerName: "Dhinesh Kumar",
+        playerRole: "Batsman"
       },
       {
         img: '887.png',
-        firstName: "Vishal",
-        lastName: "Patel",
+        playerName: "Vishal Patel",
+        playerRole: "All Rounder",
         role: "WK"
       },
       {
         img: 'dinesh.jpeg',
-        firstName: "Dhinesh",
-        lastName: "N"
+        playerName: "Dhinesh N",
+        playerRole: "Bowler"
       },
       {
         img: 'gurman.jpeg',
-        firstName: "Gurman",
-        lastName: "Singh"
+        playerName: "Gurman Singh",
+        playerRole: "Bowler"
       },
       {
         img: 'leo.jpeg',
-        firstName: "Leo",
-        lastName: "Joseph",
+        playerName: "Leo Joseph",
+        playerRole: "Batsman",
         role: "C"
       },
       {
         img: 'vijay.jpeg',
-        firstName: "Vijay",
-        lastName: "Sundaram"
+        playerName: "Vijay Sundaram",
+        playerRole: "Batsman"
       },
       ]
     },]
@@ -95,66 +95,68 @@ export class TeamsComponent implements OnInit {
       teamName : 'Player Index - JCL 2',
       playerList: [
         {
-          img: 'dharani.jpeg',
-          firstName: "Dharani ",
-          lastName: "Krishna"
+          img: 'arun.jpeg',
+          playerName: "Arun Kumar",
+          playerRole: "All Rounder"
         },
         {
         img: 'Noor.jpg',
-        firstName: "Noor Mohammed",
-        lastName: "Ibrahim",
-        role: "C"
-      },
-      {
-        img: 'arun.jpeg',
-        firstName: "Arun",
-        lastName: "Kumar"
+        playerName: "Noor Mohammed",
+        playerRole: "WK/Batsman",
+        role: "C",
+        info: 1,
       },
       {
         img: 'madhavan.jpeg',
-        firstName: "Madhavan",
-        lastName: "Rajendran"
+        playerName: "Madhavan Rajendran",
+        playerRole: "Batsman"
       },
       {
         img: 'prithvi.jpeg',
-        firstName: "Prithvi",
-        lastName: "Raj"
+        playerName: "Prithvi Raj",
+        playerRole: "Bowler"
       },
       {
         img: '887.png',
-        firstName: "Srinivas",
-        lastName: "Pedada"
+        playerName: "Srinivas Pedada",
+        playerRole: "Batsman"
+      },
+      {
+        img: 'dharani.jpeg',
+        playerName: "Dharani Krishna",
+        playerRole: "Batsman"
       },
       {
         img: '887.png',
-        firstName: "Dhinesh",
-        lastName: "N"
+        playerName: "Dhinesh Kumar",
+        playerRole: "Batsman"
       },
       {
         img: '887.png',
-        firstName: "Vishal",
-        lastName: "Patel",
+        playerName: "Vishal Patel",
+        playerRole: "All Rounder",
         role: "WK"
       },
       {
         img: 'dinesh.jpeg',
-        firstName: "Dhinesh",
-        lastName: "Kumar"
+        playerName: "Dhinesh N",
+        playerRole: "Bowler"
       },
       {
         img: 'gurman.jpeg',
-        firstName: "Gurman",
-        lastName: "Singh"
+        playerName: "Gurman Singh",
+        playerRole: "Bowler"
       },
       {
         img: 'leo.jpeg',
-        firstName: "Leo",
-        lastName: "Joseph",
+        playerName: "Leo Joseph",
+        playerRole: "Batsman",
+        role: "C"
       },
       {
         img: 'vijay.jpeg',
-        firstName: "Vijay",
-        lastName: "Sundaram"
+        playerName: "Vijay Sundaram",
+        playerRole: "Batsman"
       },
       ]
     },]
@@ -169,66 +171,68 @@ export class TeamsComponent implements OnInit {
       teamName : 'Player Index - JCL 3',
       playerList: [
         {
-          img: 'gurman.jpeg',
-          firstName: "Gurman",
-          lastName: "Singh"
+          img: 'madhavan.jpeg',
+          playerName: "Madhavan Rajendran",
+          playerRole: "Batsman"
         },
         {
         img: 'Noor.jpg',
-        firstName: "Noor Mohammed",
-        lastName: "Ibrahim",
-        role: "C"
+        playerName: "Noor Mohammed",
+        playerRole: "WK/Batsman",
+        role: "C",
+        info: 1,
       },
       {
         img: 'arun.jpeg',
-        firstName: "Arun",
-        lastName: "Kumar"
-      },
-      {
-        img: 'madhavan.jpeg',
-        firstName: "Madhavan",
-        lastName: "Rajendran"
+        playerName: "Arun Kumar",
+        playerRole: "All Rounder"
       },
       {
         img: 'prithvi.jpeg',
-        firstName: "Prithvi",
-        lastName: "Raj"
+        playerName: "Prithvi Raj",
+        playerRole: "Bowler"
       },
       {
         img: '887.png',
-        firstName: "Srinivas",
-        lastName: "Pedada"
+        playerName: "Srinivas Pedada",
+        playerRole: "Batsman"
       },
       {
         img: 'dharani.jpeg',
-        firstName: "Dharani ",
-        lastName: "Krishna"
+        playerName: "Dharani Krishna",
+        playerRole: "Batsman"
       },
       {
         img: '887.png',
-        firstName: "Dhinesh",
-        lastName: "N"
+        playerName: "Dhinesh Kumar",
+        playerRole: "Batsman"
       },
       {
         img: '887.png',
-        firstName: "Vishal",
-        lastName: "Patel",
+        playerName: "Vishal Patel",
+        playerRole: "All Rounder",
         role: "WK"
       },
       {
         img: 'dinesh.jpeg',
-        firstName: "Dhinesh",
-        lastName: "Kumar"
+        playerName: "Dhinesh N",
+        playerRole: "Bowler"
+      },
+      {
+        img: 'gurman.jpeg',
+        playerName: "Gurman Singh",
+        playerRole: "Bowler"
       },
       {
         img: 'leo.jpeg',
-        firstName: "Leo",
-        lastName: "Joseph",
+        playerName: "Leo Joseph",
+        playerRole: "Batsman",
+        role: "C"
       },
       {
         img: 'vijay.jpeg',
-        firstName: "Vijay",
-        lastName: "Sundaram"
+        playerName: "Vijay Sundaram",
+        playerRole: "Batsman"
       },
       ]
     },]
@@ -240,70 +244,71 @@ export class TeamsComponent implements OnInit {
     selected:false,
     hover: false,
     playersList:[  {
-      teamName : 'Player Index - Japan Cup 1',
+      teamName : 'Player Index - Japan Cup',
       playerList: [
-
-      {
-        img: 'madhavan.jpeg',
-        firstName: "Madhavan",
-        lastName: "Rajendran"
-      },
-      {
-        img: 'prithvi.jpeg',
-        firstName: "Prithvi",
-        lastName: "Raj"
-      },
-      {
+        {
+          img: 'prithvi.jpeg',
+          playerName: "Prithvi Raj",
+          playerRole: "Bowler"
+        },
+        {
+          img: 'madhavan.jpeg',
+          playerName: "Madhavan Rajendran",
+          playerRole: "Batsman"
+        },
+        {
         img: 'Noor.jpg',
-        firstName: "Noor Mohammed",
-        lastName: "Ibrahim",
-        role: "C"
+        playerName: "Noor Mohammed",
+        playerRole: "WK/Batsman",
+        role: "C",
+        info: 1,
       },
       {
         img: 'arun.jpeg',
-        firstName: "Arun",
-        lastName: "Kumar"
+        playerName: "Arun Kumar",
+        playerRole: "All Rounder"
       },
       {
         img: '887.png',
-        firstName: "Srinivas",
-        lastName: "Pedada"
+        playerName: "Srinivas Pedada",
+        playerRole: "Batsman"
       },
       {
         img: 'dharani.jpeg',
-        firstName: "Dharani ",
-        lastName: "Krishna"
+        playerName: "Dharani Krishna",
+        playerRole: "Batsman"
       },
       {
         img: '887.png',
-        firstName: "Dhinesh",
-        lastName: "N"
+        playerName: "Dhinesh Kumar",
+        playerRole: "Batsman"
       },
       {
         img: '887.png',
-        firstName: "Vishal",
-        lastName: "Patel",
+        playerName: "Vishal Patel",
+        playerRole: "All Rounder",
         role: "WK"
       },
       {
         img: 'dinesh.jpeg',
-        firstName: "Dhinesh",
-        lastName: "Kumar"
+        playerName: "Dhinesh N",
+        playerRole: "Bowler"
       },
       {
         img: 'gurman.jpeg',
-        firstName: "Gurman",
-        lastName: "Singh"
+        playerName: "Gurman Singh",
+        playerRole: "Bowler"
       },
       {
         img: 'leo.jpeg',
-        firstName: "Leo",
-        lastName: "Joseph",
+        playerName: "Leo Joseph",
+        playerRole: "Batsman",
+        role: "C"
       },
       {
         img: 'vijay.jpeg',
-        firstName: "Vijay",
-        lastName: "Sundaram"
+        playerName: "Vijay Sundaram",
+        playerRole: "Batsman"
       },
       ]
     },]
@@ -315,71 +320,71 @@ export class TeamsComponent implements OnInit {
     selected:false,
     hover: false,
     playersList:[  {
-      teamName : 'Player Index - Japan Cup 2',
+      teamName : 'Player Index - Japan Cup - Division 2',
       playerList: [
         {
-          img: '887.png',
-          firstName: "Srinivas",
-          lastName: "Pedada"
+          img: 'dinesh.jpeg',
+          playerName: "Dhinesh N",
+          playerRole: "Bowler"
         },
-
+        {
+          img: 'prithvi.jpeg',
+          playerName: "Prithvi Raj",
+          playerRole: "Bowler"
+        },
+        {
+          img: 'madhavan.jpeg',
+          playerName: "Madhavan Rajendran",
+          playerRole: "Batsman"
+        },
+        {
+        img: 'Noor.jpg',
+        playerName: "Noor Mohammed",
+        playerRole: "WK/Batsman",
+        role: "C",
+        info: 1,
+      },
       {
         img: 'arun.jpeg',
-        firstName: "Arun",
-        lastName: "Kumar"
+        playerName: "Arun Kumar",
+        playerRole: "All Rounder"
       },
       {
-        img: 'madhavan.jpeg',
-        firstName: "Madhavan",
-        lastName: "Rajendran"
+        img: '887.png',
+        playerName: "Srinivas Pedada",
+        playerRole: "Batsman"
       },
-      {
-        img: 'prithvi.jpeg',
-        firstName: "Prithvi",
-        lastName: "Raj"
-      },
-
       {
         img: 'dharani.jpeg',
-        firstName: "Dharani ",
-        lastName: "Krishna"
+        playerName: "Dharani Krishna",
+        playerRole: "Batsman"
       },
       {
         img: '887.png',
-        firstName: "Dhinesh",
-        lastName: "N"
+        playerName: "Dhinesh Kumar",
+        playerRole: "Batsman"
       },
       {
         img: '887.png',
-        firstName: "Vishal",
-        lastName: "Patel",
+        playerName: "Vishal Patel",
+        playerRole: "All Rounder",
         role: "WK"
       },
       {
-        img: 'dinesh.jpeg',
-        firstName: "Dhinesh",
-        lastName: "Kumar"
-      },
-      {
         img: 'gurman.jpeg',
-        firstName: "Gurman",
-        lastName: "Singh"
+        playerName: "Gurman Singh",
+        playerRole: "Bowler"
       },
       {
         img: 'leo.jpeg',
-        firstName: "Leo",
-        lastName: "Joseph",
-      },
-      {
-        img: 'Noor.jpg',
-        firstName: "Noor Mohammed",
-        lastName: "Ibrahim",
+        playerName: "Leo Joseph",
+        playerRole: "Batsman",
         role: "C"
       },
       {
         img: 'vijay.jpeg',
-        firstName: "Vijay",
-        lastName: "Sundaram"
+        playerName: "Vijay Sundaram",
+        playerRole: "Batsman"
       },
       ]
     },]
@@ -391,69 +396,71 @@ export class TeamsComponent implements OnInit {
     selected:false,
     hover: false,
     playersList:[  {
-      teamName : 'Player Index - KCL 1',
+      teamName : 'Player Index - KCL - Team 1',
       playerList: [
         {
           img: 'leo.jpeg',
-          firstName: "Leo",
-          lastName: "Joseph",
+          playerName: "Leo Joseph",
+          playerRole: "Batsman",
+          role: "C"
         },
+        {
+          img: 'dinesh.jpeg',
+          playerName: "Dhinesh N",
+          playerRole: "Bowler"
+        },
+        {
+          img: 'prithvi.jpeg',
+          playerName: "Prithvi Raj",
+          playerRole: "Bowler"
+        },
+        {
+          img: 'madhavan.jpeg',
+          playerName: "Madhavan Rajendran",
+          playerRole: "Batsman"
+        },
+        {
+        img: 'Noor.jpg',
+        playerName: "Noor Mohammed",
+        playerRole: "WK/Batsman",
+        role: "C",
+        info: 1,
+      },
       {
         img: 'arun.jpeg',
-        firstName: "Arun",
-        lastName: "Kumar"
-      },
-      {
-        img: 'madhavan.jpeg',
-        firstName: "Madhavan",
-        lastName: "Rajendran"
-      },
-      {
-        img: 'prithvi.jpeg',
-        firstName: "Prithvi",
-        lastName: "Raj"
+        playerName: "Arun Kumar",
+        playerRole: "All Rounder"
       },
       {
         img: '887.png',
-        firstName: "Srinivas",
-        lastName: "Pedada"
+        playerName: "Srinivas Pedada",
+        playerRole: "Batsman"
       },
       {
         img: 'dharani.jpeg',
-        firstName: "Dharani ",
-        lastName: "Krishna"
+        playerName: "Dharani Krishna",
+        playerRole: "Batsman"
       },
       {
         img: '887.png',
-        firstName: "Dhinesh",
-        lastName: "N"
+        playerName: "Dhinesh Kumar",
+        playerRole: "Batsman"
       },
       {
         img: '887.png',
-        firstName: "Vishal",
-        lastName: "Patel",
+        playerName: "Vishal Patel",
+        playerRole: "All Rounder",
         role: "WK"
       },
       {
-        img: 'dinesh.jpeg',
-        firstName: "Dhinesh",
-        lastName: "Kumar"
-      },
-      {
         img: 'gurman.jpeg',
-        firstName: "Gurman",
-        lastName: "Singh"
-      },
-      {
-        img: 'Noor.jpg',
-        firstName: "Noor Mohammed",
-        lastName: "Ibrahim",
-        role: "C"
+        playerName: "Gurman Singh",
+        playerRole: "Bowler"
       },
       {
         img: 'vijay.jpeg',
-        firstName: "Vijay",
-        lastName: "Sundaram"
+        playerName: "Vijay Sundaram",
+        playerRole: "Batsman"
       },
       ]
     },]
@@ -474,26 +481,21 @@ curentTeamView: any = [
   showTeamSquad(card: number) {
     for(let i = 0; i<this.teamList.length; i++) {
       if (this.teamList[i].teamnumber === card) {
-        console.log(this.teamList, 'this.teamList')
         this.curentTeamView = this.teamList[i].playersList;
 
       }
+      if(this.teamList[i].teamnumber === card) {
+        this.teamList[i].selected = true;
+      }
+      else {
       this.teamList[i].selected = false;
+    }
     }
   }
 
-  // showTeamSquad(card: number) {
-  //   for(let i = 0; i<this.teamList.length; i++) {
-  //     console.log(this.teamList, 'teamlist')
-  //     if (this.teamList[i].selected === true) {
-  //       this.curentTeamView = this.teamList[i].playersList;
-  //     }
-  //     this.teamList[i].selected = false;
-  //   }
-  // }
 
-  playerInfo(Firstname: any) {
-    console.log(Firstname, 'Firstname')
+  playerInfo(playerName: any) {
+    console.log(playerName, 'playerName')
     this.router.navigate(['../player-info'], {
       relativeTo: this.route,
     }

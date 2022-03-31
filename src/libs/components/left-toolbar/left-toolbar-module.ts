@@ -9,6 +9,7 @@ import { TeamsComponent } from './sub-components/teams/teams.component';
 import { RegistrationComponent } from './sub-components/registration/registration.component';
 import { LeaguesComponent } from './sub-components/leagues/leagues.component';
 import { PlayersInfoComponent } from './sub-components/players-info/players-info.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { PlayersInfoComponent } from './sub-components/players-info/players-info
     BrowserModule,
     CommonModule,
     MatDividerModule,
+    MatCheckboxModule,
     FlexLayoutModule,
     MatButtonModule,
     AqccMatButtonModule,

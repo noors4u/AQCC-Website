@@ -4,7 +4,7 @@
     font-family: "Rakuten Sans";
     margin-bottom: 1em;
     padding-bottom: 0.4em;
-    border-bottom: 2px solid #005699;
+    border-bottom: 2px solid #23459d;
     &-title {
       font-weight: 600;
     }
@@ -20,18 +20,17 @@
       text-transform: uppercase;
       font-weight: 600;
       &-highlight {
-        background: #005699;
-      border-color: #005699;
+        background: #23459d;
+      border-color: #23459d;
       color: #fff;
       }
     }
   }
   &-league {
     &-list {
-      background: #002f52;
       border-radius: 0.3em;
       align-items: center;
-      border-top: 6px solid #ee393f;
+      border-top: 6px solid #ffcb05;
       cursor: pointer;
       position: relative;
       &-text {
@@ -58,16 +57,12 @@
         position: absolute;
       }
       &-stats {
-        background: linear-gradient(#004c85, #002f52);
-        border-radius: 0.3em;
         &-label {
           height: 2em;
           line-height: 1em;
           margin-bottom: 0.6em;
           padding: 0 0.2em;
           font-size: 0.9em;
-          font-weight: 300;
-          color: rgba(255, 255, 255, 0.6);
           text-align: center;
         }
         &-info {
@@ -77,6 +72,7 @@
           display: flex;
           border-radius: 100%;
           color: #fff;
+          font-weight: 600;
           z-index: 10;
         }
         .grey {

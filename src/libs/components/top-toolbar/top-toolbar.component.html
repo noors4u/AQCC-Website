@@ -1,6 +1,6 @@
 <div  fxLayout="column" class="toolbar" >
 <div fxFlex fxLayout="row" fxLayoutGap="1.281em" style="padding: 0.93em;">
-  <div fxFlex fxLayout="row" fxFlex="20" class="toolbar-list" *ngFor="let item of scoreCard">
+  <div fxFlex fxLayout="row" fxFlex="20" class="toolbar-list color-white" *ngFor="let item of scoreCard">
     <div fxFlex fxLayout="column" class="toolbar-list-bg" fxLayoutGap="0.5em">
       <span class="font-bold">{{ item.leagues }}</span>
       <span>{{ item.schedule }}</span>
@@ -24,12 +24,11 @@
   </div>
 </div>
 <div class="toolbar-title">
-
   <div
-    class="toolbar-title-header"
+    class="toolbar-title-header color-blue font-bold"
     fxFlex
     fxLayout="row"
-    fxLayoutAlign="start center"
+    fxLayoutAlign="center center"
   >
     {{ teamName }}
   </div>

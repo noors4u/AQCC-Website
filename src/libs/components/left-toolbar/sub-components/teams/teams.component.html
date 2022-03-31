@@ -1,9 +1,9 @@
 <div fxLayout="column">
-<div class="team" fxLayout="column">
-  <label class="team-header color-blue">{{title}}</label>
+<div class="team color-blue" fxLayout="column">
+  <label class="team-header">{{title}}</label>
   <div class="team-league" fxFlex fxLayout="row wrap" fxLayoutAlign="space-between center">
 
-    <div class="team-league-list p-16" [ngClass]="{ 'team-league-list-selected':  item.selected || item.hover, 'color-accent-800': item.selected }" (mouseenter)="item.hover = true"
+    <div class="team-league-list p-16 bg-lblue color-white" [ngClass]="{ 'team-league-list-selected':  item.selected || item.hover, 'color-accent-800': item.selected }" (mouseenter)="item.hover = true"
     (mouseleave)="item.hover = false" fxLayout="row"  fxFlex="15" *ngFor="let item of teamList" (click)="showTeamSquad(item.teamnumber)" >
       <div fxLayout="column" fxFlex >
       <div class="font-bold header-3">{{item.leagueName}}</div>
@@ -14,18 +14,18 @@
   </div>
 </div>
 
-<div class="team" fxLayout="column"  *ngFor="let item of curentTeamView">
+<div class="team color-white" fxLayout="column"  *ngFor="let item of curentTeamView">
   <label class="team-header color-blue">{{item.teamName}}</label>
   <div fxLayout="row wrap" fxLayoutGap="1.281em" >
-    <div class="team-league-list m-b-16" fxLayout="row"  fxLayoutAlign="space-between center" fxFlex="13" *ngFor="let player of item.playerList">
-      <div fxLayout="column" fxFlex (click)="playerInfo(item.Firstname)">
-        <div class="team-league-list-badge header-3" *ngIf="player.firstName === 'Noor Mohammed' || player.firstName === 'Vishal'" [ngStyle]="{'color': player.role === 'C' ? '#005699' : '#ee393f'}">{{player.role}}</div>
+    <div class="team-league-list m-b-16 bg-yellow color-blue" fxLayout="row"  fxLayoutAlign="space-between center" fxFlex="13" *ngFor="let player of item.playerList">
+      <div fxLayout="column" fxFlex (click)="playerInfo(item.playerName)">
+        <div class="team-league-list-badge header-3" *ngIf="player.playerName === 'Noor Mohammed' || player.playerName === 'Vishal'" [ngStyle]="{'color': player.role === 'C' ? '#005699' : '#ee393f'}">{{player.role}}</div>
         <img [src]="
         '.../../../../../../../assets/images/' + player.img
       " height="auto" width="100%">
-      <div fxLayoutAlign="center start" fxLayout="column" class="p-8">
-      <div class="font-bold header-3">{{player.firstName}}</div>
-      <div class="header-3">{{player.lastName}}</div>
+      <div fxLayoutAlign="center center" fxLayout="column" class="p-8">
+      <div class="team-league-list-plyname font-bold header-3">{{player.playerName}}</div>
+      <div class="header-3">{{player.playerRole}}</div>
     </div>
     </div>
     </div>

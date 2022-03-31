@@ -5,6 +5,8 @@ import {MatDividerModule} from '@angular/material/divider';
 import { CoreModule, FlexLayoutModule } from '@angular/flex-layout';
 import { AqccMatButtonComponent } from 'src/libs/core/mat-button/mat-button.component';
 import { CommonModule } from '@angular/common';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 
 
 
@@ -12,6 +14,7 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   imports: [BrowserModule,
     CommonModule,
+    MatCheckboxModule,
     MatDividerModule,
     FlexLayoutModule],
   declarations: [

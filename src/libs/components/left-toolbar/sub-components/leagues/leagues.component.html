@@ -1,23 +1,21 @@
+<div fxLayout="column" class="leagues">
+  <div fxLayout="column">
+    <label class="leagues-header color-blue">{{title}}</label>
+  </div>
+  <div fxLayout="row wrap">
+  <div *ngFor="let item of leagueList" fxFlex="15" class="box-shadow m-b-16 m-r-16" fxLayoutAlign="center center">
+    <div  fxLayout="column" fxFlex>
+    <div class="leagues-tournament p-16" fxLayoutAlign="center center">
+      <img [src]="
+      '.../../../../../../../assets/images/leagues/' + item.img
+    " height="200" width="200">
+    </div>
+    <div fxLayout="column" fxFlex fxFill fxLayoutGap="0.2em" class="bg-yellow color-blue p-16">
+      <span class="header-3">{{item.format}}</span>
+      <span class="header-2 font-bold">{{item.tournamentName}}</span>
+    </div>
+  </div>
+</div>
+  </div>
 
-
-
-  <div fxLayout="row">
-    <div class="about" fxLayout="row">
-      <div class="about-header color-blue" fxFlex>Leagues</div>
-      <div class="about-description">
-
-      </div>
-      </div>
-
-
-
-
-
-
-
-
-
-<!-- <br>
-<h2>Child Component</h2>
-
-<h3>Enter you name : {{parentName}} </h3> -->
+  </div>

@@ -25,6 +25,7 @@ import { RegistrationComponent } from 'src/libs/components/left-toolbar/sub-comp
 import { AboutUsComponent } from 'src/libs/components/left-toolbar/sub-components/about-us/about-us.component';
 import { TeamsComponent } from 'src/libs/components/left-toolbar/sub-components/teams/teams.component';
 import { LeftToolbarModule } from 'src/libs/components/left-toolbar/left-toolbar-module';
+import { MainPageComponent } from 'src/libs/components/main-page/main-page.component';
 
 const appRoutes: Routes = [
   { path: 'matches', component: MatchesComponent },
@@ -42,6 +43,8 @@ const appRoutes: Routes = [
     HomePageComponent,
     SponsersComponent,
     TopToolbarComponent,
+    MainPageComponent,
+
     FilterPipe,
     LeftToolbarComponent,
     MatchesComponent,

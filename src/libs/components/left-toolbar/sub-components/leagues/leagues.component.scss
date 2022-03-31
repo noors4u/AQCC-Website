@@ -1,15 +1,14 @@
-.about {
+.leagues {
   margin: 16px;
   &-header {
     font-family: "Rakuten Sans";
     margin-bottom: 1em;
     padding-bottom: 0.4em;
-    border-bottom: 2px solid #005699;
+    border-bottom: 2px solid #23459d;
     font-weight: 600;
     font-size: 1.538em;
   }
-  &-description {
-    font-size: 1.077em;
-    line-height: 1.538em;
+  &-tournament {
+    // background: linear-gradient(to right, #003e6c 50%, #005699);
   }
 }

@@ -5,8 +5,8 @@
       <div class="player-header-viewall color-blue" [ngClass]="{'player-header-viewall-highlight': allPlayerHover}" (mouseenter)="hoverPlayer()"
       (mouseleave)="hoverPlayer()" (click)="viewAllPlayers()">View All Players</div>
     </div>
-    <div class="player-league" fxFlex fxLayout="row wrap" fxLayoutAlign="space-around center">
-      <div class="player-league-list" fxLayout="column"  fxFlex="23" *ngFor="let item of playerList">
+    <div class="player-league color-yellow" fxFlex fxLayout="row wrap" fxLayoutAlign="space-around center">
+      <div class="player-league-list bg-blue color-white" fxLayout="column"  fxFlex="23" *ngFor="let item of playerList">
         <div fxLayout="column" fxLayoutAlign="center center" fxFlex class="p-16" fxLayoutGap="0.1em">
         <div class="font-bold header-2">{{item.role}}</div>
         <div class="player-league-list-name header-3">{{item.format}}</div>
@@ -48,7 +48,7 @@
         <span class="player-league-list-text font-bold header-2">{{item.count}}</span>
       </div>
       </div>
-      <div class="player-league-list-stats" fxFill fxFlex *ngIf="item.role === 'Batsman'">
+      <div class="player-league-list-stats bg-lblue" fxFill fxFlex *ngIf="item.role === 'Batsman'">
         <div *ngFor="let child of item.stats" fxFlex fxLayout="row" fxLayoutAlign="center start" class="ptb-13">
           <div  fxLayout="column" fxLayoutAlign="center center" fxFlex="19">
             <span class="player-league-list-stats-label">{{child.hs}}</span>
@@ -73,7 +73,7 @@
       </div>
       </div>
 
-      <div class="player-league-list-stats" fxFlex *ngIf="item.role === 'Bowler'">
+      <div class="player-league-list-stats bg-lblue color-white" fxFill fxFlex *ngIf="item.role === 'Bowler'">
         <div *ngFor="let child of item.bowlstats" fxFlex fxLayout="row" fxLayoutAlign="center start" class="ptb-13">
           <div  fxLayout="column" fxLayoutAlign="center center" fxFlex="19">
             <span class="player-league-list-stats-label">{{child.bb}}</span>

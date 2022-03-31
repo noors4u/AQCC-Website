@@ -41,13 +41,34 @@ body { margin: 0; font-family: "Rakuten Sans"; }
 
 
 .color-blue {
-  color: #002f52;
+  color: #23459d;
+}
+.bg-blue {
+  background-color: #23459d;
+}
+.bg-lblue {
+  background-color: #0066b3;
+}
+.bg-yellow {
+  background-color: #ffcb05;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, #003e6c 50%, #23459d);
+}
+
+.color-yellow {
+  color: #ffcb05;
+}
+
+.color-white {
+  color: #FFFFFF;
 }
 .font-bold {
   font-weight: 700;
 }
 .p-16 {
-  padding: 16px;
+  padding: 1.231em;
 }
 .p-8 {
   padding: 8px;
@@ -73,13 +94,16 @@ padding: 1em 0em;
   }
 
 .m-16 {
-  margin: 16px;
+  margin: 1.231em;
 }
 .m-t-16 {
-  margin-top: 16px;
+  margin-top: 1.231em;
 }
 .m-b-16 {
-  margin-bottom: 16px;
+  margin-bottom: 1.231em;
+}
+.m-r-16 {
+  margin-right: 1.231em;
 }
 .header-1 {
   font-size: 1.538em;
@@ -89,6 +113,10 @@ padding: 1em 0em;
 }
 .header-3 {
   font-size: 1.077em;
+}
+
+.box-shadow {
+  box-shadow: 0 0 0.3em rgb(0 0 0 / 20%);
 }
 
 

@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./players-info.component.scss'],
 })
 export class PlayersInfoComponent implements OnInit {
-  title = 'Teams'
+  title = 'Noor Mohammed Ibrahim'
   allPlayerHover = false;
   playerList = [
     {
